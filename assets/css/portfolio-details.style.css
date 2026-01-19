@@ -1,0 +1,82 @@
+.portfolio-info h4 {
+  font-size: 1.2rem;
+}
+.portfolio-description {
+  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+  padding: 2rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* Style moderne pour les listes de compétences */
+.portfolio-skills {
+  margin-top: 2rem;
+}
+
+.used_tech,
+.used_skills {
+  margin-bottom: 2rem;
+}
+
+.used_tech ul,
+.used_skills ul {
+  list-style: none;
+  padding-left: 0;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.used_tech ul:hover,
+.used_skills ul:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 120, 255, 0.1);
+}
+
+.used_tech h4,
+.used_skills h4 {
+  color: #0078ff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #0078ff;
+  display: inline-block;
+}
+
+.used_tech li,
+.used_skills li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4e4e4e;
+  line-height: 1.6;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Icône de check personnalisée */
+.used_tech li:before,
+.used_skills li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0078ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.used_tech li:hover,
+.used_skills li:hover {
+  color: #0078ff;
+  padding-left: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .used_tech ul,
+  .used_skills ul {
+    margin-bottom: 1.5rem;
+  }
+}
