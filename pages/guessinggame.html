@@ -51,22 +51,22 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="../index.html" data-i18n="nav_home">Home</a></li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#about">About</a>
+              <a class="nav-link scrollto" href="../index.html#about" data-i18n="nav_about">About</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#services"
+              <a class="nav-link scrollto" href="../index.html#services" data-i18n="nav_services"
                 >Services</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#work"
+              <a class="nav-link scrollto" href="../index.html#work" data-i18n="nav_projects"
                 >Work & Projects</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#contact"
+              <a class="nav-link scrollto" href="../index.html#contact" data-i18n="nav_contact"
                 >Contact</a
               >
             </li>
@@ -102,12 +102,12 @@
       <div class="hero-content display-table">
         <div class="table-cell">
           <div class="container">
-            <h2 class="hero-title mb-4">Guessing Game</h2>
+            <h2 class="hero-title mb-4" data-i18n="project_gg_title">Guessing Game</h2>
             <ol class="breadcrumb d-flex justify-content-center">
               <li class="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="#" data-i18n="nav_home">Home</a>
               </li>
-              <li class="breadcrumb-item active">Details</li>
+              <li class="breadcrumb-item active" data-i18n="project_details">Details</li>
             </ol>
           </div>
         </div>
@@ -137,34 +137,34 @@
             </div>
             <div class="col-lg-6">
               <div class="portfolio-info">
-                <h3>Project informations</h3>
+                <h3 data-i18n="project_info_title">Project informations</h3>
                 <ul>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Personal Project</strong></li>
-                  <li><strong>Project date</strong>Jan. 2026</li>
+                  <li><strong data-i18n="project_category">Category</strong>: <span data-i18n="project_cat_webdev">Web Development</span></li>
+                  <li><strong data-i18n="project_gg_personal">Personal Project</strong></li>
+                  <li><strong data-i18n="project_date">Project date</strong>: <span data-i18n="project_gg_date">Jan. 2026</span></li>
                   <li>
-                    <strong>Project URL</strong>:
+                    <strong data-i18n="project_url">Project URL</strong>:
                     <a href="https://one-piece-guess.vercel.app/"
                       >https://one-piece-guess.vercel.app</a
                     >
                   </li>
                 </ul>
-                <h3>Details</h3>
-                <p>
+                <h3 data-i18n="project_details_title">Details</h3>
+                <p data-i18n="project_gg_desc1">
                   A daily guessing game inspired by the One Piece universe.
                   Players must identify 3 mystery characters each day using
                   clues like gender, crew, devil fruit, etc. Visual feedback
                   (green, yellow, red) and directional arrows guide players
                   toward the correct answer.
                 </p>
-                <p>
+                <p data-i18n="project_gg_desc2">
                   Built with Vue.js 3 and TypeScript on the frontend, featuring
                   a responsive design with Tailwind CSS and smooth animations.
                   The backend runs on Node.js serverless functions deployed on
                   Vercel, exposing a REST API for daily character selection and
                   search functionality.
                 </p>
-                <p>
+                <p data-i18n="project_gg_desc3">
                   The project implements game state persistence via
                   localStorage, a hint system unlocked after 10 attempts, and
                   Google AdSense integration for monetization (not active). A
@@ -190,7 +190,7 @@
                       <h4>Backend</h4>
                       <li>Node.js</li>
                       <li>TypeScript</li>
-                      <li>Vercel Severless Functions</li>
+                      <li data-i18n="project_gg_serverless">Vercel Serverless Functions</li>
                       <li>API REST</li>
                     </ul>
                   </div>
@@ -198,27 +198,27 @@
                 <div class="used_skills row">
                   <div class="col-lg-6 col-md-12">
                     <ul>
-                      <h4>Hosting & Deployment</h4>
-                      <li>Vercel Platform for hosting</li>
-                      <li>Git - Version Control</li>
-                      <li>GitHub - Source code repository</li>
+                      <h4 data-i18n="project_hosting">Hosting & Deployment</h4>
+                      <li data-i18n="project_gg_hosting1">Vercel Platform for hosting</li>
+                      <li data-i18n="project_git">Git - Version Control</li>
+                      <li data-i18n="project_github">GitHub - Source code repository</li>
                     </ul>
                   </div>
                   <div class="col-lg-6 col-md-12">
                     <ul>
-                      <h4>Skills Developed</h4>
-                      <li>
+                      <h4 data-i18n="project_skills">Skills Developed</h4>
+                      <li data-i18n="project_gg_skill1">
                         Development of a modern, interactive game design
                         interface, fully responsive
                       </li>
-                      <li>
+                      <li data-i18n="project_gg_skill2">
                         Building a backend system to manage game logic and user
                         interactions
                       </li>
-                      <li>API services management</li>
-                      <li>JSON data manipulation</li>
-                      <li>CI/CD, serverless architecture</li>
-                      <li>Client-side data persistence</li>
+                      <li data-i18n="project_gg_skill3">API services management</li>
+                      <li data-i18n="project_gg_skill4">JSON data manipulation</li>
+                      <li data-i18n="project_gg_skill5">CI/CD, serverless architecture</li>
+                      <li data-i18n="project_gg_skill6">Client-side data persistence</li>
                     </ul>
                   </div>
                 </div>
@@ -261,6 +261,7 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/vendor/typed.js/typed.umd.js"></script>
     <!-- Template Main JS File -->
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>

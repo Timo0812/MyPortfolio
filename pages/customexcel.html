@@ -51,22 +51,22 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="../index.html" data-i18n="nav_home">Home</a></li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#about">About</a>
+              <a class="nav-link scrollto" href="../index.html#about" data-i18n="nav_about">About</a>
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#services"
+              <a class="nav-link scrollto" href="../index.html#services" data-i18n="nav_services"
                 >Services</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#work"
+              <a class="nav-link scrollto" href="../index.html#work" data-i18n="nav_projects"
                 >Work & Projects</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto" href="../index.html#contact"
+              <a class="nav-link scrollto" href="../index.html#contact" data-i18n="nav_contact"
                 >Contact</a
               >
             </li>
@@ -102,12 +102,12 @@
       <div class="hero-content display-table">
         <div class="table-cell">
           <div class="container">
-            <h2 class="hero-title mb-4">Custom Excel Tool</h2>
+            <h2 class="hero-title mb-4" data-i18n="project_ce_title">Custom Excel Tool</h2>
             <ol class="breadcrumb d-flex justify-content-center">
               <li class="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="#" data-i18n="nav_home">Home</a>
               </li>
-              <li class="breadcrumb-item active">Details</li>
+              <li class="breadcrumb-item active" data-i18n="project_details">Details</li>
             </ol>
           </div>
         </div>
@@ -131,21 +131,21 @@
             </div>
             <div class="col-lg-6">
               <div class="portfolio-info">
-                <h3>Project informations</h3>
+                <h3 data-i18n="project_info_title">Project informations</h3>
                 <ul>
-                  <li><strong>Category</strong>: Data Analytics</li>
-                  <li><strong>Client</strong>: Sensory Team Nespresso</li>
-                  <li><strong>Project date</strong>: Dec. 2025</li>
+                  <li><strong data-i18n="project_category">Category</strong>: <span data-i18n="project_cat_data">Data Analytics</span></li>
+                  <li><strong data-i18n="project_client">Client</strong>: Sensory Team Nespresso</li>
+                  <li><strong data-i18n="project_date">Project date</strong>: <span data-i18n="project_ce_date">Dec. 2025</span></li>
                 </ul>
-                <h3>Details</h3>
-                <p>
+                <h3 data-i18n="project_details_title">Details</h3>
+                <p data-i18n="project_ce_desc1">
                   Design and development of an automated evaluation system for
                   sensory panels, analyzing multiple key parameters. The project
                   combines advanced VBA functions handling complex cases (tied
                   values, nulls) with multi-criteria evaluation logic generating
                   global scores per attribute.
                 </p>
-                <p>
+                <p data-i18n="project_ce_desc2">
                   The solution integrates ranking algorithms tolerant to
                   variations, intelligent detection of rating trends, and a
                   configurable rules system. The modular architecture and
@@ -159,24 +159,24 @@
                 <div class="used_tech row">
                   <div class="col-lg-6 col-md-12">
                     <ul>
-                      <h4>Tech Stack</h4>
+                      <h4 data-i18n="project_ce_techstack">Tech Stack</h4>
                       <li>Visual Basic for Application</li>
-                      <li>Advanced Excel Formulas</li>
+                      <li data-i18n="project_ce_excel">Advanced Excel Formulas</li>
                     </ul>
                   </div>
                   <div class="col-lg-6 col-md-12">
                     <ul>
-                      <h4>Skills Developed</h4>
-                      <li>Data structure management (Collections, Arrays)</li>
-                      <li>
+                      <h4 data-i18n="project_skills">Skills Developed</h4>
+                      <li data-i18n="project_ce_skill1">Data structure management (Collections, Arrays)</li>
+                      <li data-i18n="project_ce_skill2">
                         Complex conditional logic (multiple case handling)
                       </li>
-                      <li>Custom VBA function development</li>
-                      <li>Comprehensive user documentation writing</li>
-                      <li>
+                      <li data-i18n="project_ce_skill3">Custom VBA function development</li>
+                      <li data-i18n="project_ce_skill4">Comprehensive user documentation writing</li>
+                      <li data-i18n="project_ce_skill5">
                         Technical communication (complex concept simplification)
                       </li>
-                      <li>Evolving requirements management</li>
+                      <li data-i18n="project_ce_skill6">Evolving requirements management</li>
                     </ul>
                   </div>
                 </div>
@@ -219,6 +219,7 @@
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/vendor/typed.js/typed.umd.js"></script>
     <!-- Template Main JS File -->
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
