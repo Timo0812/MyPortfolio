@@ -9,7 +9,7 @@ const translations = {
     nav_contact: "Contact",
 
     // Hero Section
-    hero_title: "My name is Timothy Lovato",
+    hero_title: "My name is Timothy",
     hero_subtitle: "and I am a",
     hero_typed:
       "Full Stack Developer, E-Commerce Specialist, Business Owner, Digital Marketing Specialist, Data Analyst",
