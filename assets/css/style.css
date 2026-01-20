@@ -869,12 +869,75 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Language Switcher
+--------------------------------------------------------------*/
+.nav-item-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.lang-switcher {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.lang-switcher:hover {
+  background: #fff;
+  color: #0078ff;
+  transform: translateY(-2px);
+}
+
+.lang-switcher.active {
+  border-color: #0078ff;
+  color: #fff;
+}
+
+/* Mobile responsive */
+@media (max-width: 997px) {
+  .nav-item-lang {
+    margin-left: 0;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+  }
+
+  .lang-switcher {
+    border-color: #0078ff;
+    color: #0078ff;
+  }
+
+  .lang-switcher:hover {
+    background: #0078ff;
+    color: #fff;
+  }
+
+  .lang-switcher.active {
+    border-color: #0078ff;
+    color: #fff;
+  }
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
   height: 100vh;
   position: relative;
   color: #fff;
+  text-align: center;
 }
 
 .hero .hero-content {
@@ -961,9 +1024,6 @@ a:hover {
   padding: 1rem 3rem;
   position: absolute;
   bottom: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
   border-radius: 50px;
   text-decoration: none;
   font-size: 1.1rem;
@@ -971,10 +1031,11 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .hologram {
-  border: 2px solid rgba(0, 255, 255, 0.6);
+  border: 2px solid rgb(0, 120, 255, 0.6);
   background: rgba(0, 255, 255, 0.1);
   box-shadow:
     0 0 20px rgba(0, 255, 255, 0.3),
@@ -989,15 +1050,18 @@ a:hover {
   box-shadow:
     0 0 30px rgba(0, 255, 255, 0.5),
     inset 0 0 30px rgba(0, 255, 255, 0.2);
-  transform: translateX(-50%) scale(1.05);
+  transform: scale(1.05);
   color: #fff;
+}
+.hero-btn:hover {
+  transform: translateX(-50%) scale(1.05);
 }
 
 .hologram span {
   position: relative;
   display: inline-block;
   color: #fff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(0, 120, 255, 0.8);
 }
 
 .hologram span::before,
@@ -1018,7 +1082,7 @@ a:hover {
 }
 
 .hologram span::after {
-  color: #00ffff;
+  color: rgb(0, 120, 255);
   animation: glitch 2s infinite reverse;
   clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
 }
@@ -1035,7 +1099,7 @@ a:hover {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(0, 255, 255, 0.9),
+    rgba(0, 120, 255, 0.9),
     transparent
   );
   top: 0;
@@ -1467,6 +1531,10 @@ h5 {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .testimonial-box {
   color: #fff;
   text-align: center;
@@ -1593,70 +1661,6 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Language Switcher
---------------------------------------------------------------*/
-.nav-item-lang {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 1rem;
-}
-
-.lang-switcher {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.lang-switcher:hover {
-  background: #fff;
-  color: #0078ff;
-  transform: translateY(-2px);
-}
-
-.lang-switcher.active {
-  background: #0078ff;
-  border-color: #0078ff;
-  color: #fff;
-}
-
-/* Mobile responsive */
-@media (max-width: 997px) {
-  .nav-item-lang {
-    margin-left: 0;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    justify-content: center;
-  }
-
-  .lang-switcher {
-    border-color: #0078ff;
-    color: #0078ff;
-  }
-
-  .lang-switcher:hover {
-    background: #0078ff;
-    color: #fff;
-  }
-
-  .lang-switcher.active {
-    background: #0078ff;
-    border-color: #0078ff;
-    color: #fff;
-  }
 }
 
 /*--------------------------------------------------------------
