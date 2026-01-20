@@ -1177,13 +1177,15 @@ h5 {
 }
 .dev-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   list-style-position: inside;
   justify-items: center;
+  gap: 1rem;
 }
 .dev-skills img {
-  height: 50%;
-  width: auto;
+  max-width: 60px;
+  width: 100%;
+  height: auto;
 }
 .zoom-in {
   cursor: zoom-in;
@@ -1194,7 +1196,16 @@ h5 {
 }
 @media (max-width: 990px) {
   .dev-skills {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .dev-skills {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+  .dev-skills img {
+    max-width: 45px;
   }
 }
 
